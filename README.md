@@ -1,5 +1,8 @@
 # MyWebSite
 
+Deploy (https://katriel18.github.io/my-web-site/)
+Info (https://www.npmjs.com/package/angular-cli-ghpages)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
 ## Development server
