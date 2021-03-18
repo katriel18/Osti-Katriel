@@ -1,7 +1,8 @@
 # MyWebSite
 
-Deploy (https://katriel18.github.io/my-web-site/)
+Deploy (https://katriel18.github.io/Osti-Katriel/)
 Info (https://www.npmjs.com/package/angular-cli-ghpages)
+(ng deploy --base-href=/Osti-Katriel/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
