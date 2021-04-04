@@ -1,4 +1,7 @@
+
 <router-outlet></router-outlet>
+
+<link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
 
 
     <div class="p-d-flex p-p-3 card">
@@ -7,7 +10,7 @@
         <button pButton pRipple  type="button" icon="pi pi-search" class="p-ml-auto p-button-help"></button>
     </div>
 
-    <button pButton pRipple type="button" label="Modo oscuro" class="p-d-block p-mx-auto"></button>
+    <button pButton pRipple type="button" label="Modo oscuro" class="p-d-block p-mx-auto" (click)="changeStyle()"></button>
     <br>
  
     <button pButton type="button" label="Osti Katriel" class="p-button-lg p-d-block p-mx-auto"></button>
