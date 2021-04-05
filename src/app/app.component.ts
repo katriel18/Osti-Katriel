@@ -10,11 +10,13 @@ export class AppComponent {
   title = 'my-web-site';
 
   cssUrl: string;
-  dark:boolean;
+  //dark:boolean;
+  mode:string;
  
   constructor(public sanitizer: DomSanitizer) {
     this.cssUrl = 'assets/styles/saga-green/theme.css';
-    this.dark=false;
+    //this.dark=false;
+    this.mode='pi pi-sun';
 
   }
 
@@ -23,7 +25,8 @@ export class AppComponent {
   
 
     this.cssUrl = (this.cssUrl === 'assets/styles/saga-green/theme.css') ? 'assets/styles/vela-green/theme.css' : 'assets/styles/saga-green/theme.css';
-    this.dark = (this.dark === false) ? true : false;
+    //this.dark = (this.dark === false) ? true : false;
+    this.mode = (this.mode === 'pi pi-sun') ? 'pi pi-moon' : 'pi pi-sun';
     //this.cssUrl = 'assets/styles/vela-green/theme.css';
   
   }

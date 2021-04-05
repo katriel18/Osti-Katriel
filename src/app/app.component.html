@@ -3,8 +3,7 @@
 <div class="p-d-flex p-p-3 card">
     <button pButton pRipple type="button" icon="pi pi-check" class="p-mr-2"></button>
     <button pButton pRipple type="button" icon="pi pi-trash" class="p-button-danger"></button>
-    <button *ngIf="!dark" pButton pRipple  type="button" icon="pi pi-moon" class="p-ml-auto p-button-help" (click)="changeStyle()"></button>
-    <button *ngIf="dark" pButton pRipple  type="button" icon="pi pi-sun" class="p-ml-auto p-button-help" (click)="changeStyle()"></button>
+    <button pButton pRipple  type="button" [icon]="mode" class="p-ml-auto p-button-help" (click)="changeStyle()"></button>
 </div>
 <br>
 <router-outlet></router-outlet>
