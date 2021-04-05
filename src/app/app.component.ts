@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(public sanitizer: DomSanitizer) {
     this.cssUrl = 'assets/styles/saga-green/theme.css';
     //this.dark=false;
-    this.mode='pi pi-sun';
+    this.mode='pi pi-moon';
 
   }
 
@@ -26,7 +26,7 @@ export class AppComponent {
 
     this.cssUrl = (this.cssUrl === 'assets/styles/saga-green/theme.css') ? 'assets/styles/vela-green/theme.css' : 'assets/styles/saga-green/theme.css';
     //this.dark = (this.dark === false) ? true : false;
-    this.mode = (this.mode === 'pi pi-sun') ? 'pi pi-moon' : 'pi pi-sun';
+    this.mode = (this.mode === 'pi pi-moon') ? 'pi pi-sun' : 'pi pi-moon';
     //this.cssUrl = 'assets/styles/vela-green/theme.css';
   
   }
