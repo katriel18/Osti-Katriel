@@ -1,21 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 import { DomSanitizer } from '@angular/platform-browser';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'my-web-site';
+export class HomeComponent implements OnInit {
 
   cssUrl: string;
   dark:boolean;
- 
+
   constructor(public sanitizer: DomSanitizer) {
     this.cssUrl = 'assets/styles/saga-green/theme.css';
     this.dark=false;
-
   }
 
   changeStyle() {
@@ -24,8 +24,12 @@ export class AppComponent {
 
     this.cssUrl = (this.cssUrl === 'assets/styles/saga-green/theme.css') ? 'assets/styles/vela-green/theme.css' : 'assets/styles/saga-green/theme.css';
     this.dark = (this.dark === false) ? true : false;
+    
     //this.cssUrl = 'assets/styles/vela-green/theme.css';
   
+  }
+
+  ngOnInit(): void {
   }
 
 }
