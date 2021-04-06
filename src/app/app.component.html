@@ -1,15 +1,11 @@
-
 <link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
-<div class="contenedor">
-<div class="p-d-flex">
-    <button pButton type="button" label="Osti Katriel" class="p-button-lg"></button>
+<div class="contenedor" >
+    <div class="p-d-flex">
+        <button pButton type="button" label="Osti Katriel" class="p-button-lg"></button>
 
-    <button pButton pRipple  type="button" [icon]="mode" class="p-ml-auto p-button-help" (click)="changeStyle()"></button>
+        <button pButton pRipple type="button" [icon]="mode" class="p-ml-auto p-button-help"
+            (click)="changeStyle()"></button>
+    </div>
+    <router-outlet></router-outlet>
+
 </div>
-<router-outlet></router-outlet>
-
-</div>
-
-
-
-
