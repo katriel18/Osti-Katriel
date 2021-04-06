@@ -1,7 +1,8 @@
+      
+        <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
+            [showIndicators]="true">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.previewImageSrc" class="logo">
+            </ng-template>
+        </p-galleria>
 
-<p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions"  [numVisible]="5"
-    [showThumbnails]="false" [showIndicators]="true"> 
-    <ng-template pTemplate="item" let-item>
-        <img [src]="item.previewImageSrc" style="width: 100%;  height: 350px;margin-top: 20px;" />
-    </ng-template>
-</p-galleria>
