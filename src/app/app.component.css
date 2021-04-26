@@ -1,23 +1,19 @@
 .contenedor{
     margin-top: 15px !important;
-    
     width: 70%;
-    
     margin:auto;
 }
 
-  
+.submenu{
+    display: none
+}
 
 @media screen and (max-width:900px) {
     .contenedor{
         width: 96%;
     }
-    
 }
-.submenu{
-    
-    display: none
-}
+
 @media screen and (max-width:700px) {
     .menu{
         display: none
