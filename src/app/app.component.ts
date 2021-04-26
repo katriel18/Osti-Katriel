@@ -33,7 +33,12 @@ export class AppComponent {
        
         routerLink: '/home'
       }
-      
+      ,
+      {
+        label: 'katriel',
+       
+        url: 'https://github.com/katriel18'
+      }
     ];
   }
 
