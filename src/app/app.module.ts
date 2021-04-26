@@ -11,6 +11,7 @@ import {ButtonModule} from 'primeng/button';
 import {GalleriaModule} from 'primeng/galleria';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {MenuModule} from 'primeng/menu';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -31,6 +32,7 @@ import { HomeComponent } from './pages/home/home.component';
     GalleriaModule,
     ScrollTopModule,
     ScrollPanelModule,
+    MenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
