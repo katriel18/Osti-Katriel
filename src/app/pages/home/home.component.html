@@ -1,8 +1,8 @@
 
-        <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
+        <p-galleria  [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
             [showIndicators]="true">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.previewImageSrc" class="logo">
+                <img [src]="item.previewImageSrc" class="logo" style="border-radius: 5px;">
             </ng-template>
         </p-galleria>
 
