@@ -15,6 +15,9 @@ import {MenuModule} from 'primeng/menu';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
+
+
+import {FieldsetModule} from 'primeng/fieldset';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,8 @@ import { HomeComponent } from './pages/home/home.component';
     ScrollTopModule,
     ScrollPanelModule,
     MenuModule,
+
+    FieldsetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
