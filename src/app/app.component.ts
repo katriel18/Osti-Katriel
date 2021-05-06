@@ -14,28 +14,28 @@ export class AppComponent {
     this.items = [
 
       {
-        label: 'Primary',
+        label: 'home',
        
         routerLink: '/home'
       },
       {
-        label: 'Secondary',
+        label: 'Producto',
        
         routerLink: '/home'
       },
       {
-        label: 'Success',
+        label: 'Recetas',
        
         routerLink: '/home'
       },
       {
-        label: 'Info',
+        label: 'Nosotros',
        
         routerLink: '/home'
       }
       ,
       {
-        label: 'katriel',
+        label: 'Contacto',
        
         url: 'https://github.com/katriel18'
       }
