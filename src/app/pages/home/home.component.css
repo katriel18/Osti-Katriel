@@ -5,6 +5,14 @@
  
 }
 
+
+.panel{
+    width: 24.25%;
+}
+.panel-right{
+    width: 24.25%;
+    margin-left: 1%;
+}
 @media screen and (max-width:800px) {
     .logo{
         height: 250px ;

@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 
 import {FieldsetModule} from 'primeng/fieldset';
+import {PanelModule} from 'primeng/panel';;
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import {FieldsetModule} from 'primeng/fieldset';
     MenuModule,
 
     FieldsetModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

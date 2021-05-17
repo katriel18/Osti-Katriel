@@ -1,54 +1,129 @@
+<p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
+    [showIndicators]="false" [autoPlay]="true" [circular]="true" [showItemNavigators]="false">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" class="logo" style="border-radius: 5px;">
+    </ng-template>
+</p-galleria>
 
-        <p-galleria  [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
-            [showIndicators]="false" [autoPlay]="true" [circular]="true" [showItemNavigators]="false">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="item.previewImageSrc" class="logo" style="border-radius: 5px;">
-            </ng-template>
-        </p-galleria>
-        <br>
-<p-fieldset legend="Header" [toggleable]="true">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</p-fieldset>
 <br>
-<p-fieldset legend="Header" [toggleable]="true">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</p-fieldset>
 
-        José Silverio Olaya Balandra (Chorrillos, 1782 o 1795 - Lima, 29 de junio de 1823), fue un mártir en la lucha por la Independencia del Perú. Pescador de oficio, se ofreció como emisario secreto entre el gobierno independiente refugiado en los castillos del Callao y los patriotas de Lima, ciudad ocupada entonces por los realistas. Fue descubierto, apresado y sometido a tormento para que revelara los nombres de los patriotas implicados en las misivas, pero permaneció callado. Fue fusilado y antes torturado en un pasaje que hoy lleva su nombre, y que se halla en las inmediaciones de la Plaza Mayor de Lima.
+<div style=" display: flex;">
+
+    <p-panel header="¿QUÉ SOMOS?" [toggleable]="true" class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </p-panel>
+    <p-panel header="¿QUÉ OFRECEMOS?" [toggleable]="true" class="panel-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </p-panel>
+    <p-panel header="¿NUESTRO MERCADO?" [toggleable]="true" class="panel-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </p-panel>
+    <p-panel header="¿NUESTRO PRODUCTO?" [toggleable]="true" class="panel-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </p-panel>
+</div>
+
+<br>
+
+José Silverio Olaya Balandra (Chorrillos, 1782 o 1795 - Lima, 29 de junio de 1823), fue un mártir en la lucha por la
+Independencia del Perú. Pescador de oficio, se ofreció como emisario secreto entre el gobierno independiente refugiado
+en los castillos del Callao y los patriotas de Lima, ciudad ocupada entonces por los realistas. Fue descubierto,
+apresado y sometido a tormento para que revelara los nombres de los patriotas implicados en las misivas, pero permaneció
+callado. Fue fusilado y antes torturado en un pasaje que hoy lleva su nombre, y que se halla en las inmediaciones de la
+Plaza Mayor de Lima.
 <h3>Biografía</h3>
-<span>   
-Según datos recogidos por Ismael Portal, José Olaya Balandra nació en la villa de Chorrillos, en 1782, como hijo de un pescador chorrillano apellidado Olaya, y de Melchora Balandra, siendo sus hermanos Cecilio, Mercedes, Narcisa, Josefa y Manuela. Portal se basó en informaciones de los parientes del mártir que todavía vivían en la época en que publicó su libro (1899).1​ Otro de los biógrafos de Olaya, Luis Antonio Eguiguren, que investigó en diversos archivos, sostiene que los padres del mártir se llamaban José Apolinario Olaya y Melchora Balandra, ambos chorrillanos, que tuvieron doce hijos en total, el segundo de los cuales fue José Olaya.2​
+<span>
+    Según datos recogidos por Ismael Portal, José Olaya Balandra nació en la villa de Chorrillos, en 1782, como hijo de
+    un pescador chorrillano apellidado Olaya, y de Melchora Balandra, siendo sus hermanos Cecilio, Mercedes, Narcisa,
+    Josefa y Manuela. Portal se basó en informaciones de los parientes del mártir que todavía vivían en la época en que
+    publicó su libro (1899).1​ Otro de los biógrafos de Olaya, Luis Antonio Eguiguren, que investigó en diversos
+    archivos, sostiene que los padres del mártir se llamaban José Apolinario Olaya y Melchora Balandra, ambos
+    chorrillanos, que tuvieron doce hijos en total, el segundo de los cuales fue José Olaya.2​
 
-Existen sin embargo dudas sobre el año del nacimiento. Al parecer, Portal solo se limitó a copiar el año que aparece grabado en el retrato del mártir, pintado por el maestro José Gil de Castro, que fue contemporáneo de Olaya. Eguiguren no se ocupa del asunto del natalicio y supone que la partida de bautizo que aclararía la duda debió desaparecer durante el incendio de Chorrillos ocasionado por las tropas chilenas en 1881. Daba así por hecho que Olaya fue bautizado en la iglesia de Chorrillos.2​ Existe otra versión que afirma que el año de su nacimiento fue 1795.3​
+    Existen sin embargo dudas sobre el año del nacimiento. Al parecer, Portal solo se limitó a copiar el año que aparece
+    grabado en el retrato del mártir, pintado por el maestro José Gil de Castro, que fue contemporáneo de Olaya.
+    Eguiguren no se ocupa del asunto del natalicio y supone que la partida de bautizo que aclararía la duda debió
+    desaparecer durante el incendio de Chorrillos ocasionado por las tropas chilenas en 1881. Daba así por hecho que
+    Olaya fue bautizado en la iglesia de Chorrillos.2​ Existe otra versión que afirma que el año de su nacimiento fue
+    1795.3​
 
-Otro asunto controvertido ha sido su apellido. El marino y geógrafo Germán Stiglich (1877-1928), al revisar los cuadernos de matrícula de los puertos peruanos, no encontró ningún Olaya (apellido español), pero si varios Laya (nombre de origen prehispánico). Stiglich llegó incluso a afirmar que el verdadero nombre del mártir era José O. Laya, afirmación que fue recogida y difundida por el historiador Juan José Vega.
+    Otro asunto controvertido ha sido su apellido. El marino y geógrafo Germán Stiglich (1877-1928), al revisar los
+    cuadernos de matrícula de los puertos peruanos, no encontró ningún Olaya (apellido español), pero si varios Laya
+    (nombre de origen prehispánico). Stiglich llegó incluso a afirmar que el verdadero nombre del mártir era José O.
+    Laya, afirmación que fue recogida y difundida por el historiador Juan José Vega.
 
-Olaya era de cuna humilde, de raza indígena, y vivía de la pesca artesanal en la villa de San Pedro de Chorrillos, una ranchería de pescadores al sur de la ciudad de Lima, que era célebre por sus baños adonde acudían las personas de la clase alta limeña.4​
+    Olaya era de cuna humilde, de raza indígena, y vivía de la pesca artesanal en la villa de San Pedro de Chorrillos,
+    una ranchería de pescadores al sur de la ciudad de Lima, que era célebre por sus baños adonde acudían las personas
+    de la clase alta limeña.4​
 
-Se dice que su padre José Apolinario simpatizó con pasión por la causa independentista, al punto que no le gustaba mencionar al pejerrey por su nombre, por ser de reminiscencia monárquica, y llegó incluso a bautizar a su mejor red de pesca como «red de pejerreyes de la patria», nombre más acorde a su ideología. Murió en 1822, legando a su hijo su oficio y su amor a la patria libre.2​
+    Se dice que su padre José Apolinario simpatizó con pasión por la causa independentista, al punto que no le gustaba
+    mencionar al pejerrey por su nombre, por ser de reminiscencia monárquica, y llegó incluso a bautizar a su mejor red
+    de pesca como «red de pejerreyes de la patria», nombre más acorde a su ideología. Murió en 1822, legando a su hijo
+    su oficio y su amor a la patria libre.2​
 
-Se dice que Olaya era un excelente nadador y que en una pequeña balsa cubría la ruta de Chorrillos a la isla de San Lorenzo, y de allí al Callao, llevando pescado para su venta.5​
+    Se dice que Olaya era un excelente nadador y que en una pequeña balsa cubría la ruta de Chorrillos a la isla de San
+    Lorenzo, y de allí al Callao, llevando pescado para su venta.5​
 
-También una versión asegura que empezó a servir a la causa patriota desde muy temprano, cuando arribó a las costas peruanas la Escuadra Libertadora al mando de Thomas Cochrane en 1820. En esa ocasión visitó las naves de dicha escuadra y se ofreció a llevar correspondencia para los patriotas del Callao, y luego para los de Lima.4​
+    También una versión asegura que empezó a servir a la causa patriota desde muy temprano, cuando arribó a las costas
+    peruanas la Escuadra Libertadora al mando de Thomas Cochrane en 1820. En esa ocasión visitó las naves de dicha
+    escuadra y se ofreció a llevar correspondencia para los patriotas del Callao, y luego para los de Lima.4​
 
-La independencia del Perú, declarada por primera vez en Huaura en el mes de noviembre de 1820 y el 28 de julio de 1821 en Lima, por el general José de San Martín, solamente se hizo efectiva en Lima y en el norte; pero Cuzco, la sierra central y el sur aún estaban bajo el dominio del ejército realista -en su mayoría conformado por indígenas y mestizos leales al Rey-; estos en más de una ocasión volvieron a amenazar Lima y el Callao. Cuando San Martín regresó de Guayaquil después de una conversación secreta con Simón Bolívar, instaló el Congreso Constituyente de 1822, e inmediatamente renunció a su cargo de Protector del Perú. El Congreso nombró como Presidente de la República a José de la Riva Agüero. El ejército realista, al mando de José Ramón Rodil, aprovechando que las tropas patriotas se encontraban lejos, tomó Lima. Los miembros del Congreso se refugiaron en la Fortaleza del Real Felipe en el Callao. Allí se encontraba también el general grancolombiano Antonio José de Sucre, que enviara el Libertador Bolívar con una avanzada de su ejército.
+    La independencia del Perú, declarada por primera vez en Huaura en el mes de noviembre de 1820 y el 28 de julio de
+    1821 en Lima, por el general José de San Martín, solamente se hizo efectiva en Lima y en el norte; pero Cuzco, la
+    sierra central y el sur aún estaban bajo el dominio del ejército realista -en su mayoría conformado por indígenas y
+    mestizos leales al Rey-; estos en más de una ocasión volvieron a amenazar Lima y el Callao. Cuando San Martín
+    regresó de Guayaquil después de una conversación secreta con Simón Bolívar, instaló el Congreso Constituyente de
+    1822, e inmediatamente renunció a su cargo de Protector del Perú. El Congreso nombró como Presidente de la República
+    a José de la Riva Agüero. El ejército realista, al mando de José Ramón Rodil, aprovechando que las tropas patriotas
+    se encontraban lejos, tomó Lima. Los miembros del Congreso se refugiaron en la Fortaleza del Real Felipe en el
+    Callao. Allí se encontraba también el general grancolombiano Antonio José de Sucre, que enviara el Libertador
+    Bolívar con una avanzada de su ejército.
 
-Fue en ese contexto que ocurrió el sacrificio de José Olaya. Sucre necesitaba imperiosamente comunicarse con los patriotas de Lima, ya que quería conocer los movimientos de los realistas y los pertrechos con los que contaban. Olaya se ofreció una vez más a ser el portador de los mensajes. Se contactó en Lima con Juana de Dios Manrique, una aristócrata y patriota que era sobrina de Antonio Riquero, antiguo contador mayor y uno de los refugiados en el Callao; este personaje era el nexo con Sucre.4​6​
+    Fue en ese contexto que ocurrió el sacrificio de José Olaya. Sucre necesitaba imperiosamente comunicarse con los
+    patriotas de Lima, ya que quería conocer los movimientos de los realistas y los pertrechos con los que contaban.
+    Olaya se ofreció una vez más a ser el portador de los mensajes. Se contactó en Lima con Juana de Dios Manrique, una
+    aristócrata y patriota que era sobrina de Antonio Riquero, antiguo contador mayor y uno de los refugiados en el
+    Callao; este personaje era el nexo con Sucre.4​6​
 
-Olaya llevaba ocultamente los mensajes escritos, cubriendo la ruta entre Chorrillos y Lima, simulando llevar pescado para su venta en la ciudad; esa ruta, de 15 km, estaba muy vigilada por los realistas, de modo que el riesgo era muy grande. No obstante, Olaya hizo el recorrido muchas veces; se ignora cuántas exactamente. Los realistas empezaron a sospechar que alguien filtraba informaciones y redoblaron la vigilancia.7​
+    Olaya llevaba ocultamente los mensajes escritos, cubriendo la ruta entre Chorrillos y Lima, simulando llevar pescado
+    para su venta en la ciudad; esa ruta, de 15 km, estaba muy vigilada por los realistas, de modo que el riesgo era muy
+    grande. No obstante, Olaya hizo el recorrido muchas veces; se ignora cuántas exactamente. Los realistas empezaron a
+    sospechar que alguien filtraba informaciones y redoblaron la vigilancia.7​
 
-El 27 de junio de 1823, cuando llevaba, entre otros recados, una carta de Sucre para Narciso de Colina (un patriota limeño), Olaya fue descubierto (se dice que por una delación[cita requerida]). Emboscado por un piquete de soldados realistas -indígenas y mestizos- en la calle de Acequia Alta (actualmente en el cruce de la cuadra 5 de los jirones Caylloma y Moquegua), antes de ser apresado arrojó las cartas en una acequia; otra versión, menos creíble, dice que se comió las misivas.4​
+    El 27 de junio de 1823, cuando llevaba, entre otros recados, una carta de Sucre para Narciso de Colina (un patriota
+    limeño), Olaya fue descubierto (se dice que por una delación[cita requerida]). Emboscado por un piquete de soldados
+    realistas -indígenas y mestizos- en la calle de Acequia Alta (actualmente en el cruce de la cuadra 5 de los jirones
+    Caylloma y Moquegua), antes de ser apresado arrojó las cartas en una acequia; otra versión, menos creíble, dice que
+    se comió las misivas.4​
 
-«De nada sirvieron halagos, promesas, apaleamientos, extracción de las uñas, trituración de pulgares, ni la presencia dolorosa de su madre. ¡Que terrible dilema!: escoger entre el afecto entrañable a la madre o la seguridad de los patriotas. Era preferible que su madre lo llorase muerto a que se avergonzara de verlo vivo, manchado por la traición».
-Enrique F.Gómez Espinoza, Manual de Educación Patriótica. Edit.Atlántida S.A. Lima,pág.137.
-Llevado al Palacio del Virrey ante la presencia de Rodil, éste intentó que delatara a los patriotas comprometidos con las cartas, ofreciéndole a cambio premios y mucho dinero; como no diera efecto, recurrió a las amenazas. Como Olaya permaneciera incólume, fue torturado. Sufrió doscientos palazos, le arrancaron las uñas y lo colgaron de los pulgares. Pero Olaya no se amilanó ante el dolor y permaneció en silencio.6​ Incluso le llevaron ante su presencia a algunas personas arrestadas por sospecha de estar comprometidas con los patriotas del Callao (una de ellas era Antonia Zumaeta de Riquero), pero ante cada una de ellas Olaya negó conocerlas.7​ También su madre fue llevada a su presencia, pero ni aún con eso se quebró. Se dice que, en medio de las torturas, pronunció su célebre frase:
+    «De nada sirvieron halagos, promesas, apaleamientos, extracción de las uñas, trituración de pulgares, ni la
+    presencia dolorosa de su madre. ¡Que terrible dilema!: escoger entre el afecto entrañable a la madre o la seguridad
+    de los patriotas. Era preferible que su madre lo llorase muerto a que se avergonzara de verlo vivo, manchado por la
+    traición».
+    Enrique F.Gómez Espinoza, Manual de Educación Patriótica. Edit.Atlántida S.A. Lima,pág.137.
+    Llevado al Palacio del Virrey ante la presencia de Rodil, éste intentó que delatara a los patriotas comprometidos
+    con las cartas, ofreciéndole a cambio premios y mucho dinero; como no diera efecto, recurrió a las amenazas. Como
+    Olaya permaneciera incólume, fue torturado. Sufrió doscientos palazos, le arrancaron las uñas y lo colgaron de los
+    pulgares. Pero Olaya no se amilanó ante el dolor y permaneció en silencio.6​ Incluso le llevaron ante su presencia a
+    algunas personas arrestadas por sospecha de estar comprometidas con los patriotas del Callao (una de ellas era
+    Antonia Zumaeta de Riquero), pero ante cada una de ellas Olaya negó conocerlas.7​ También su madre fue llevada a su
+    presencia, pero ni aún con eso se quebró. Se dice que, en medio de las torturas, pronunció su célebre frase:
 
-«Si mil vidas tuviera gustoso las daría por mi patria».
-Finalmente, fue sentenciado a pena de muerte por fusilamiento bajo el cargo de traición. A las once de la mañana del 29 de junio de 1823, fue llevado a un pasaje aledaño a la Plaza Mayor de Lima, llamado entonces Callejón de los Petateros, y que ahora tiene su nombre: Pasaje Olaya. Sus verdugos, según la costumbre, le preguntaron si tenía un último deseo. Olaya pidió que se le sepultara con la escarapela rojiblanca, el emblema de su patria libre, deseo que se le concedió. Luego, se procedió a su fusilamiento. Su cadáver fue arrastrado a la Plaza de Armas y allí decapitado por el verdugo. Permaneció toda la tarde en exhibición pública, hasta que, por la noche, unos pescadores chorrillanos lo pusieron en una carreta y se lo llevaron a sepultar a su tierra natal, con su escarapela bicolor prendida en su pecho.
+    «Si mil vidas tuviera gustoso las daría por mi patria».
+    Finalmente, fue sentenciado a pena de muerte por fusilamiento bajo el cargo de traición. A las once de la mañana del
+    29 de junio de 1823, fue llevado a un pasaje aledaño a la Plaza Mayor de Lima, llamado entonces Callejón de los
+    Petateros, y que ahora tiene su nombre: Pasaje Olaya. Sus verdugos, según la costumbre, le preguntaron si tenía un
+    último deseo. Olaya pidió que se le sepultara con la escarapela rojiblanca, el emblema de su patria libre, deseo que
+    se le concedió. Luego, se procedió a su fusilamiento. Su cadáver fue arrastrado a la Plaza de Armas y allí
+    decapitado por el verdugo. Permaneció toda la tarde en exhibición pública, hasta que, por la noche, unos pescadores
+    chorrillanos lo pusieron en una carreta y se lo llevaron a sepultar a su tierra natal, con su escarapela bicolor
+    prendida en su pecho.
 </span>
