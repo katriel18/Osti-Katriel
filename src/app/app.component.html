@@ -3,21 +3,23 @@
      
     <div class="p-d-flex">
 
-        <button pButton type="button" label="Osti Katriel" class="menu p-button-lg"></button> 
+        <button pButton type="button" label="Osti Katriel"
+        class="menu p-button-lg" routerLink="/home"></button> 
         <div class="menu p-ml-auto">
             <button pButton pRipple type="button" label="Home" 
-                class="p-button-text p-button-lg"></button>
+                class="p-button-text p-button-lg" routerLink="/home"></button>
             <button pButton pRipple type="button" label="Producto"
-                class="p-button-text p-button-lg"></button>
+                class="p-button-text p-button-lg" routerLink="/product"></button>
             <button pButton pRipple type="button" label="Recetas"
                 class="p-button-text p-button-lg"></button>
             <button pButton pRipple type="button" label="Nosotros"
                 class="p-button-text p-button-lg"></button>
             <button pButton pRipple type="button" label="Contacto"
-                class="p-button-text p-button-lg"></button>
+                class="p-button-text p-button-lg" routerLink="/contact"></button>
         </div>
 
-        <button pButton pRipple type="button" label="Osti Katriel" class="submenu p-button-outlined"></button> 
+        <button pButton pRipple type="button" label="Osti Katriel"
+        class="submenu p-button-outlined" routerLink="/home"></button> 
         <div class="submenu p-ml-auto">
             <button pButton pRipple type="button" icon="pi pi-bars" class="p-button-text"
             (click)="menu.toggle($event)"></button>
@@ -25,6 +27,14 @@
         </div>
         
     </div>
+
+    <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [showThumbnails]="false"
+    [showIndicators]="false" [autoPlay]="true" [circular]="true" [showItemNavigators]="false">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" class="logo p-shadow-5" style="border-radius: 5px;">
+    </ng-template>
+</p-galleria>
+
     <router-outlet></router-outlet>
 
    

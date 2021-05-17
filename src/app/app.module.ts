@@ -18,11 +18,15 @@ import { HomeComponent } from './pages/home/home.component';
 
 
 import {FieldsetModule} from 'primeng/fieldset';
-import {PanelModule} from 'primeng/panel';;
+import {PanelModule} from 'primeng/panel';
+import { ProductComponent } from './pages/product/product.component';
+import { ContactComponent } from './pages/contact/contact.component';;
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

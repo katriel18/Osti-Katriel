@@ -28,6 +28,31 @@
     }
 }
 
+.logo{
+    height: 350px ;
+    width: 100%;
+    margin-top:1%;
+    margin-bottom: 1%;;
+}
+
+@media screen and (max-width:800px) {
+    .logo{
+        height: 250px ;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .logo{
+        height: 200px ;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
 
 /* Para 960px 
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
