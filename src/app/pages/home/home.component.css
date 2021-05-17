@@ -1,18 +1,10 @@
 .logo{
     height: 350px ;
     width: 100%;
-    margin-top: 15px;
- 
+    margin-top:1%;
+    margin-bottom: 1%;;
 }
 
-
-.panel{
-    width: 24.25%;
-}
-.panel-right{
-    width: 24.25%;
-    margin-left: 1%;
-}
 @media screen and (max-width:800px) {
     .logo{
         height: 250px ;
@@ -20,6 +12,7 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
 }
 @media screen and (max-width:400px) {
     .logo{
@@ -28,4 +21,5 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
 }
